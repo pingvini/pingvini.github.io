@@ -14,7 +14,7 @@ body {
 }
 
 .bodypadding{
-  padding-top: 60px; /* Account for fixed navbar */
+  padding-top: 40px; /* Account for fixed navbar */
 }
 
 h1, h2, h3 {
