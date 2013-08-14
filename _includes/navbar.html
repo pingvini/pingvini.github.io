@@ -9,10 +9,19 @@
       </a>          
       <div class="nav-collapse collapse">              
         <ul class="nav navbar-nav">
-          <li{% if page.title == 'News' %} class="active"{% endif %}><a href="{{ site.baseurl }}/news/">News</a></li>
-          <li{% if page.title == 'Team' %} class="active"{% endif %}><a href="{{ site.baseurl }}/team/">Team</a></li>
-          <li{% if page.title == 'Results' %} class="active"{% endif %}><a href="{{ site.baseurl }}/results/">Results</a></li>
-          <li{% if page.title == 'Sponsors' %} class="active"{% endif %}><a href="{{ site.baseurl }}/sponsors/">Sponsors</a></li>
+          {% assign first_level = page.url | remove_first:'/' | split:'/' | first %}
+          <li{% if first_level == 'news' %} class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/news/">News</a>
+          </li>
+          <li{% if first_level == 'team' %} class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/team/">Team</a>
+          </li>
+          <li{% if first_level == 'results' %} class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/results/">Results</a>
+          </li>
+          <li{% if first_level == 'sponsors' %} class="active"{% endif %}>
+            <a href="{{ site.baseurl }}/sponsors/">Sponsors</a>
+          </li>
         </ul>
       </div><!--/.nav-collapse -->      
 </div>
