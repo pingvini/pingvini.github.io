@@ -1,5 +1,5 @@
 body {
-  padding-top: 70px; /* Account for fixed navbar */
+  padding-top: 50px; /* Account for fixed navbar */
 }
 
 h1, h2, h3 {
@@ -16,6 +16,12 @@ h1, h2, h3 {
 .container-narrow {
   margin: 0 auto;
   max-width: 800px;
+	position: relative;
+}
+
+.container-nav {
+  width: 100%;  
+  background-color: #303030;    
 }
 
 /* Top nav and header
@@ -23,18 +29,30 @@ h1, h2, h3 {
 
 .bs-peng-nav {
   background-color: #303030;
-  font-size: 16px;
-  line-height: 20px;
+  min-height: 43px;
+}
+
+.bs-peng-nav .navbar-toggle{
+  margin-bottom: 5px;
+  margin-top: 4px;
 }
 .bs-peng-nav .navbar-brand,
 .bs-peng-nav .navbar-brand:hover,
 .bs-peng-nav .navbar-brand:focus {
-  color: #ffaa22;
   font-size: 20px;
-  font-weight: 500;
+  padding: 2px 2px;
+  margin-top: 6px;
+  margin-left: -15px;
+  margin-right: 30px;
+  max-width: 90px;
 }
+
 .bs-peng-nav .navbar-nav > li > a {
   color: #eeeeee;
+  padding-bottom: 11px;
+  padding-top: 11px;
+  font-size: 17px;
+  font-weight: 300;
 }
 .bs-peng-nav .navbar-nav > li > a:hover {
   color: #ffaa22;
