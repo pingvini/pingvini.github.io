@@ -18,6 +18,16 @@
     g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 
+$(".header-navigation > ul > li > a").click(function(event) {  
+    var $contentDiv = $(".header-cover");
+    if($contentDiv.length != 0){	    
+	    var redir = $(this).attr("href");    
+	     $contentDiv.slideUp("slow", function () {
+		location.href = redir;});
+	    event.preventDefault();
+   }
+});
+
 </script>
 <noscript><p><img src="http://dolbi.bacek.com/analytics/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
 <!-- End Piwik Code -->
