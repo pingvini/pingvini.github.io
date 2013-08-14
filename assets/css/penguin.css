@@ -16,7 +16,6 @@ h1, h2, h3 {
 .container-narrow {
   margin: 0 auto;
   max-width: 800px;
-	position: relative;
 }
 
 .container-nav {
