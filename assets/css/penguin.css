@@ -27,7 +27,7 @@ h1, h2, h3 {
 -------------------------------------------------- */
 
 .bs-peng-nav {
-  background-color: #303030;
+  background-color: inherit;
   min-height: 43px;
 }
 
@@ -40,10 +40,11 @@ h1, h2, h3 {
 .bs-peng-nav .navbar-brand:focus {
   font-size: 20px;
   padding: 2px 2px;
-  margin-top: 6px;
-  margin-left: -15px;
-  margin-right: 30px;
+  margin: 6px 30px 0px -15px; 
   max-width: 90px;
+}
+.bs-peng-nav .navbar-nav > li{
+  color: #ffaa22;
 }
 
 .bs-peng-nav .navbar-nav > li > a {
@@ -53,11 +54,11 @@ h1, h2, h3 {
   font-size: 17px;
 }
 .bs-peng-nav .navbar-nav > li > a:hover {
-  color: #ffaa22;
+  color: inherit;
 }
 .bs-peng-nav .navbar-nav > .active > a,
 .bs-peng-nav .navbar-nav > .active > a:hover {
-  color: #ffaa22;
+  color: inherit;
   background-color: #424242;
 }
 
@@ -84,4 +85,3 @@ h1, h2, h3 {
 .posts td {
   padding: 3px;
 }
-
