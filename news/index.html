@@ -10,13 +10,13 @@ weight: 10
 
   <table class="posts" width=100%>
 	  <colgroup>
-		  <col style="width:25%">
-		  <col style="width:75%">
+		  <col>
+		  <col>
 	  </colgroup>
   <tbody>
     {% for post in site.posts %}
 	<tr>
-		<td>{{ post.date | date_to_string }}</td>
+		<td class="textfit">{{ post.date | date_to_string }}</td>
 		<td><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
 	</tr>
     {% endfor %}

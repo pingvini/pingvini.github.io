@@ -6,12 +6,6 @@ h1, h2, h3 {
   margin-bottom: 20px;
 }
 
-.hsubtitle {
-  margin-top: -10px;
-  margin-bottom: 20px;
-  color: #777777;
-}
-
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
@@ -84,4 +78,14 @@ h1, h2, h3 {
 
 .posts td {
   padding: 3px;
+}
+
+.posts td.textfit{
+  width:25%;
+}
+
+.postsubtitle {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  color: #777777;
 }
