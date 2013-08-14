@@ -3,41 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Curling team Pingvini official website.">
     <meta name="author" content="Lan Zagar">
 
-	<link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/pic/icon.32.png" />
+    <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/pic/icon.32.png" />
 
-	<title>{% if page.title == 'Pingvini' %}Pingvini curling team{% else %}{{ page.title }} - Pingvini{% endif %}</title>
+    <title>{% if page.title == 'Pingvini' %}Pingvini curling team{% else %}{{ page.title }} - Pingvini{% endif %}</title>
 
     <!-- Bootstrap core CSS -->
-	<link href="{{ site.baseurl }}/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this site -->
-	<link href="{{ site.baseurl }}/assets/css/penguin.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/penguin.css" rel="stylesheet">
   </head>
-
-  <body>
-
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top bs-peng-nav">
-      <div class="container-narrow">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-		<a class="navbar-brand" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/pic/stone.png" alt="" height=20> Pingvini</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li{% if page.title == 'News' %} class="active"{% endif %}><a href="{{ site.baseurl }}/news/">News</a></li>
-            <li{% if page.title == 'Team' %} class="active"{% endif %}><a href="{{ site.baseurl }}/team/">Team</a></li>
-            <li{% if page.title == 'Results' %} class="active"{% endif %}><a href="{{ site.baseurl }}/results/">Results</a></li>
-            <li{% if page.title == 'Sponsors' %} class="active"{% endif %}><a href="{{ site.baseurl }}/sponsors/">Sponsors</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
-    <div class="container-narrow">
