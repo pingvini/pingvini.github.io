@@ -57,7 +57,8 @@ h1, h2, h3 {
   color: inherit;
 }
 .bs-peng-nav .navbar-nav > .active > a,
-.bs-peng-nav .navbar-nav > .active > a:hover {
+.bs-peng-nav .navbar-nav > .active > a:hover,
+.bs-peng-nav .navbar-nav > .active > a:focus {
   color: inherit;
   background-color: #424242;
 }
