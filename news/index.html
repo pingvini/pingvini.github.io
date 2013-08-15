@@ -4,23 +4,20 @@ title: News
 navbar: true
 weight: 10
 ---
-
 <div id="home">
   <h1>Posts</h1>
-
   <table class="posts" width=100%>
-	  <colgroup>
-		  <col>
-		  <col>
-	  </colgroup>
+    <colgroup>
+      <col>
+      <col>
+    </colgroup>
   <tbody>
     {% for post in site.posts %}
-	<tr>
-		<td class="textfit">{{ post.date | date_to_string }}</td>
-		<td><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
-	</tr>
+    <tr>
+      <td class="textfit">{{ post.date | date_to_string }}</td>
+      <td><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></td>
+    </tr>
     {% endfor %}
   </tbody>
   </table>
-
 </div>

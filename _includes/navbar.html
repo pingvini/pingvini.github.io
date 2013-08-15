@@ -1,27 +1,26 @@
-<div class="navbar navbar-inverse bs-peng-nav container-narrow">  
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-      </button>    
-      <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/assets/pic/name_white.png" height="30" alt="Pingvini">
-      </a>          
-      <div class="nav-collapse collapse">              
-        <ul class="nav navbar-nav">
-          {% assign first_level = page.url | remove_first:'/' | split:'/' | first %}
-          <li{% if first_level == 'news' %} class="active"{% endif %}>
-            <a href="{{ site.baseurl }}/news/">News</a>
-          </li>
-          <li{% if first_level == 'team' %} class="active"{% endif %}>
-            <a href="{{ site.baseurl }}/team/">Team</a>
-          </li>
-          <li{% if first_level == 'results' %} class="active"{% endif %}>
-            <a href="{{ site.baseurl }}/results/">Results</a>
-          </li>
-          <li{% if first_level == 'sponsors' %} class="active"{% endif %}>
-            <a href="{{ site.baseurl }}/sponsors/">Sponsors</a>
-          </li>
-        </ul>
-      </div><!--/.nav-collapse -->      
+<div class="navbar navbar-inverse bs-peng-nav container-narrow">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a class="navbar-brand" href="{{ site.baseurl }}/">
+    <img src="{{ site.baseurl }}/assets/pic/name_white.png" height="30" alt="Pingvini">
+  </a>
+  <div class="nav-collapse collapse">
+    <ul class="nav navbar-nav">{% assign first_level = page.url | remove_first:'/' | split:'/' | first %}
+      <li{% if first_level == 'news' %} class="active"{% endif %}>
+        <a href="{{ site.baseurl }}/news/">News</a>
+      </li>
+      <li{% if first_level == 'team' %} class="active"{% endif %}>
+        <a href="{{ site.baseurl }}/team/">Team</a>
+      </li>
+      <li{% if first_level == 'results' %} class="active"{% endif %}>
+        <a href="{{ site.baseurl }}/results/">Results</a>
+      </li>
+      <li{% if first_level == 'sponsors' %} class="active"{% endif %}>
+        <a href="{{ site.baseurl }}/sponsors/">Sponsors</a>
+      </li>
+    </ul>
+  </div><!--/.nav-collapse -->
 </div>
