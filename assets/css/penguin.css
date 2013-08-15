@@ -67,7 +67,7 @@ h1, h2, h3 {
 
 .infinite-image{
   position: relative;
-  margin-top: -10px;
+  margin-top: -8px;
 }
 .infinite-image > div{
   width: 100%;  
@@ -112,6 +112,29 @@ h1, h2, h3 {
   .dl-horizontal dd {
     margin-left: 160px;
   }
+}
+
+/* Quotes
+-------------------------------------------------- */
+
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-style: italic;
+  padding: 0.25em 42px;
+  margin: 1em;
+  position: relative;
+  color: #383838;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -20px;
+  color: #7a7a7a;
+  margin-left:20px;
 }
 
 /* Posts
