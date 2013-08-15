@@ -1,5 +1,6 @@
 body {
   padding-top: 50px; /* Account for fixed navbar */
+  min-width: 150px;
 }
 
 h1, h2, h3 {
@@ -10,10 +11,15 @@ h1, h2, h3 {
 .container-narrow {
   margin: 0 auto;
   max-width: 800px;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  min-height: 318px;
 }
 
-.container-nav {
-  width: 100%;  
+.container-nav {  
+  width: 100%;
+  min-width: inherit;
   background-color: #303030;    
 }
 
@@ -54,6 +60,41 @@ h1, h2, h3 {
 .bs-peng-nav .navbar-nav > .active > a:hover {
   color: inherit;
   background-color: #424242;
+}
+
+/*Infinite image
+-------------------------------------------------- */
+
+.infinite-image{
+  position: relative;
+  margin-top: -10px;
+}
+.infinite-image > div{
+  width: 100%;  
+}
+
+.infinite-image-cover {    
+  overflow: hidden;  
+  border-bottom: 1px solid #444;
+  position:absolute;
+  z-index: 0;
+}
+
+.infinite-image-inner {
+  display: inline-block;
+  position: relative;
+  right: -50%;
+}
+  
+.infinite-image-inner img{
+  position: inherit;
+  left: -50%;
+}
+
+.infinite-image-inner-top{
+  border-bottom: 1px solid #444;
+  position: inherit; 
+  z-index: 1;	
 }
 
 /* Horizontal description list
