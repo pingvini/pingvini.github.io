@@ -16,9 +16,9 @@ $(document).ready(function() {
       var State = History.getState();
       $.get(State.url, function(data){
           /*Get infinite image if not there yet*/
-          if($infiniteimage.text().length<5)
+          if($infiniteimage.is(':empty'))
           {
-            $infiniteimage.html($(data).filter('.infinite-image'));   
+            $infiniteimage.html($(data).filter('.infinite-image').html());   
             $infinite=$(".infinite-image-cover, .infinite-image-inner-top");         
             $infinite.hide(); 
           }          
