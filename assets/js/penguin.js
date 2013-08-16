@@ -30,7 +30,7 @@ $(document).ready(function() {
           var page = State.hash.substring(0, Math.min(4, State.hash.length)).replace(/\//g, '');
           $(".nav > li > a[href*="+page+"]").parent().addClass("active");
           /*close navbar if open*/
-          if(!$navbar.hasClass('collapsed')){
+          if(!$navbar.hasClass('collapsed') && $navbar.is(":visible")){
             $navbar.click(); 
           }
           /*show/hide image if neaded*/
