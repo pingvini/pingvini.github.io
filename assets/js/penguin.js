@@ -43,3 +43,6 @@ $(document).ready(function() {
       });    
   }
 });
+
+
+$('.tooltip-default').tooltip()
