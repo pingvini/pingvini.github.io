@@ -26,7 +26,7 @@ $(document).ready(function() {
           /*load new content*/
           document.title = $(data).filter('title').text();
           $contentdiv.html($(data).filter('#content-div'));          
-          $('[data-togle="tooltip"]').tooltip();
+          $('.tooltip-default').tooltip()
           /*set active menu item*/          
           $links.removeClass("active");
           var page = url.substring(1, url.length).split('\/')[0];
