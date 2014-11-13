@@ -8,10 +8,7 @@
     <img src="{{ site.baseurl }}/assets/pic/name_white.png" height="30" alt="Pingvini">
   </a>
   <div class="nav-collapse collapse">
-    <ul class="nav navbar-nav">{% assign first_level = page.url | remove_first:'/' | split:'/' | first %}
-      <li{% if first_level == 'news' %} class="active"{% endif %}>
-        <a href="{{ site.baseurl }}/news/">News</a>
-      </li>
+    <ul class="nav navbar-nav">{% assign first_level = page.url | remove_first:'/' | split:'/' | first %}     
       <li{% if first_level == 'team' %} class="active"{% endif %}>
         <a href="{{ site.baseurl }}/team/">Team</a>
       </li>
