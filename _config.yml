@@ -2,7 +2,6 @@ name: Pingvini
 permalink: /:categories/:year-:month-:day-:title.html
 timezone: Europe/Ljubljana
 future: false
-markdown: redcarpet
 safe: true
 exclude: [README.md, CNAME]
 baseurl: ""
